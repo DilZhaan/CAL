@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="cal.css">
+    </head> 
+    <body>
+        <div>
+            <table>
+                <tr rowspan="2" id="DisplayRow">
+                    <td colspan="4" id="Display" align="right">
+                        <p id="history"></p>
+                        <p id="currentvalue"></p>
+                    </td>
+                </tr>
+                <tr id="KEYS">
+                    <td>
+                        <button onclick="keyPrint('AC');" id="controllers">AC</button>
+                    </td>
+                    <td>
+                        <button onclick="keyPrint('C');" id="controllers">C</button>
+                    </td>
+                    <td>
+                        <button onclick="keyPrint('×');" id="Operators">X</button>
+                    </td>
+                    <td>
+                        <button onclick="keyPrint('/');" id="Operators">/</button>
+                    </td>
+                </tr>
+
+                <tr id="KEYS">
+                    <td>
+                        <button onclick="keyPrint(7);" id="value">7</button>
+                    </td>
+                    <td>
+                        <button onclick="keyPrint(8);" id="value">8</button>
+                    </td>
+                    <td>
+                        <button onclick="keyPrint(9);" id="value">9</button>
+                    </td>
+                    <td>
+                        <button onclick="keyPrint('-');"" id="Operators">-</button>
+                    </td>
+                </tr>
+
+                <tr id="KEYS">
+                    <td>
+                        <button onclick="keyPrint(4);" id="value">4</button>
+                    </td>
+                    <td>
+                        <button onclick="keyPrint(5);" id="value">5</button>
+                    </td>
+                    <td>
+                        <button onclick="keyPrint(6);" id="value">6</button>
+                    </td>
+                    <td>
+                        <button onclick="keyPrint('+');" id="Operators">+</button>
+                    </td>
+                </tr>
+
+                <tr id="KEYS">
+                    <td>
+                        <button onclick="keyPrint(1);" id="value">1</button>
+                    </td>
+                    <td>
+                        <button onclick="keyPrint(2);" id="value">2</button>
+                    </td>
+                    <td>
+                        <button onclick="keyPrint(3);" id="value">3</button>
+                    </td>
+                    <td rowspan="2">
+                        <button onclick="keyPrint('=');" id="equalmark">=</button>
+                    </td>
+                </tr>
+
+                <tr id="KEYS">
+                    <td>
+                        <button onclick="keyPrint(0);" id="value">0</button>
+                    </td>
+                    <td>
+                        <button onclick="keyPrint('00');" id="value">00</button>
+                    </td>
+                    <td>
+                        <button onclick="keyPrint('.');" id="value">.</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="cal.js"></script>
+    </body>
+</html>
