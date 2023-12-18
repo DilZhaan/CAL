@@ -81,7 +81,7 @@ function clearValues(clearCmnd = ''){
 }
 
 // use to get key inputs and handle it
-function keyPrint(key,event = ''){
+function keyPrint(key){
     //if block handles Number keys and floating mark and it will display
     if((key < 10 && key >= 0 )|| key === '.'){
         if(pOperator == '='){ // we want to check previous operation is = or another. bcs if it is = , we want to clear the display and values and get next value newly
@@ -112,21 +112,25 @@ function keyPrint(key,event = ''){
             case '=':
                 displayHistory('=');
                 if(value2) calVal(key); // bcs = operation only run with 2 values (Ex : value1 + value2 )
-                document.getElementById("currentvalue").innerHTML= value1;
+                document.getElementById("currentvalue").innerHTML= value1; //print the result -> in that time value 1 work as a total(result)
                 break;
 
                 
             default:
-                if(value1 || key == '-'){
+                if(value1 || key == '-'){ // check enterd key is valid operation or not
                     operationCounter++;
                     operations(key);
                 }
         }
-        key = '';
+        key = ''; // key is clear for get next key input freshly
     }
 }
+
+//this is keydown event -> use to get keyboard inputs for Cal
+
 document.addEventListener('keydown', function(event) {
-    const keyin = event.key;
+    const keyin = event.key; // get key form event class
+    //pass to valid parameter to keyprint
     if ((keyin >= 0&& keyin<=9) || keyin === '.' || keyin === '+' || keyin === '-' || keyin === '*' || keyin === '/' || keyin === '=') {
         keyPrint(keyin,event);
     }else if(keyin === 'Delete'){
@@ -134,7 +138,10 @@ document.addEventListener('keydown', function(event) {
     }else if(keyin === 'Backspace'){
         keyPrint('C',event);
     }else if(keyin === 'Enter'){
-        event.preventDefault();
-        keyPrint('=',event);
+
+        //this is use to prevent default key inputs (some time we click AC via mouse and after that we press enter it will press AC againly bcs we are selected it by mouse .. this can prevent it)
+        event.preventDefault(); 
+
+        keyPrint('=');
     }
 });
