@@ -111,9 +111,10 @@ function keyPrint(key,event = ''){
 
             case '=':
                 displayHistory('=');
-                if(value2) calVal(key);
+                if(value2) calVal(key); // bcs = operation only run with 2 values (Ex : value1 + value2 )
                 document.getElementById("currentvalue").innerHTML= value1;
                 break;
+
                 
             default:
                 if(value1 || key == '-'){
