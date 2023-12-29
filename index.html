@@ -8,16 +8,16 @@
             <table>
                 <tr rowspan="2" id="DisplayRow">
                     <td colspan="4" id="Display" align="right">
-                        <p id="history"></p>
-                        <p id="currentvalue"></p>
+                        <input id="history" maxlength="15" readonly></p>
+                        <input id="currentvalue" maxlength="15" readonly></p>
                     </td>
                 </tr>
                 <tr id="KEYS">
                     <td>
-                        <button onclick="keyPrint('AC');" id="controllers">AC</button>
+                        <button onclick="allClear();" id="controllers">AC</button>
                     </td>
                     <td>
-                        <button onclick="keyPrint('C');" id="controllers">C</button>
+                        <button onclick="backSpace();" id="controllers">C</button>
                     </td>
                     <td>
                         <button onclick="keyPrint('×');" id="Operators">X</button>
@@ -68,7 +68,7 @@
                         <button onclick="keyPrint(3);" id="value">3</button>
                     </td>
                     <td rowspan="2">
-                        <button onclick="keyPrint('=');" id="equalmark">=</button>
+                        <button onclick="calculate();" id="equalmark">=</button>
                     </td>
                 </tr>
 
@@ -85,6 +85,6 @@
                 </tr>
             </table>
         </div>
-        <script src="cal.js"></script>
+        <script src="calProcess.js"></script>
     </body>
 </html>
