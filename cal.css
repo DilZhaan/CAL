@@ -7,9 +7,9 @@ body{
     height: 100vh;
 }
 table{
-    border: 8px solid black;
+    border: 8px solid  hsl(0, 0%, 06%);
     border-radius: 20px;
-    background-color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 06%);
     max-width: 450px;
 }
 button{
@@ -58,7 +58,7 @@ button{
 
 
 #value{
-    background-color: hsl(175, 42%, 11%);
+    background-color: hsl(175, 30%, 14%);
     color: rgb(255, 248, 248);
 }
 #value:hover{
@@ -68,14 +68,17 @@ button{
     background-color: hsl(175, 42%, 31%);
 }
 
-p{
+input{
     background-color: hsl(0, 0%, 20%);
     border :none;
-    height:100%
-    max-width: 450px;
+    max-height:100%;
+    max-width: 100%;
+    color: white;
+    text-align: right;
 }
 #history{
     font-size: 20px;
+    width: 98%;
 }
 #currentvalue{
     font-size: 50px;

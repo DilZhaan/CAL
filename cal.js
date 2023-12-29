@@ -1,3 +1,5 @@
+// THIS IS MY VERY FIRST JS PROGRAM AND ITS ALL TASK ARE IMPLEMENTD BY MANUALLY AND VERY COMPLICATELY
+
 //global VarDeclaration
 let value1 ='' , value2 = '' ,num = '',pOperator = '';
 let operationCounter = 0;
