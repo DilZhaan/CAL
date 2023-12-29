@@ -1,67 +1,78 @@
 body{
-    background-color: #222;
-    margin: 2;
+    background-color: hsl(0, 0%, 50%);
+    margin: 0;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 table{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20;
-    background-color: #171616;
-    height: 650px;
-    width: 450px;
-    border: 0px;
+    border: 8px solid black;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 0%);
+    max-width: 450px;
 }
 button{
     height: 100px;
+    border : none;
     width: 112.5px;
     border-radius: 100%;
     font-size: xx-large;
     font-weight: bold;
     transition-duration: 0.5s;
     cursor: pointer;
-}
-#value{
-    background-color: rgb(33, 164, 103);
+    background-color: hsl(88, 80%, 36%);
     color: black;
 }
-#value:hover{
-    background-color:  black;
-    color:rgb(33, 164, 103);
+#Operators:hover{
+    background-color: hsl(88, 80%, 66%);
 }
+#Operators:active{
+    background-color: hsl(88, 20%, 96%);
+}
+
 #equalmark{
     height: 212px;
     width: 112.5px;
     border-radius: 50px;
-    background-color: yellowgreen;
-}
-#controllers{
-    background-color: rgb(41, 48, 55);
-    color: red;
-}
-#Operators{
-    background-color: rgb(23, 17, 42);
-    color: aliceblue;
+    background-color: hsl(260, 47%, 35%);
+    color: aqua;
 }
 #equalmark:hover{
-    height: 212px;
-    width: 112.5px;
-    border-radius: 50px;
-    background-color: rgb(17, 90, 28);
+    background-color: hsl(260, 47%, 55%);
+}
+#equalmark:active{
+    background-color: hsl(260, 47%, 75%);
+}
+
+#controllers{
+    background-color: hsl(0, 38%, 25%);
+    color: rgb(255, 248, 248);
 }
 #controllers:hover{
-    background-color: red;
-    color: rgb(41, 48, 55);
+    background-color: hsl(0, 38%, 35%);
 }
-#Operators:hover{
-    background-color: rgb(67, 53, 110);
-    color: rgb(12, 246, 140);
+#controllers:active{
+    background-color: hsl(0, 38%, 65%);
 }
+
+
+#value{
+    background-color: hsl(175, 42%, 11%);
+    color: rgb(255, 248, 248);
+}
+#value:hover{
+    background-color: hsl(175, 42%, 21%);
+}
+#value:active{
+    background-color: hsl(175, 42%, 31%);
+}
+
 p{
-    
-    font-weight: bold;
-    margin:0;
-    padding:0;
-    color: antiquewhite;
+    background-color: hsl(0, 0%, 20%);
+    border :none;
+    height:100%
+    max-width: 450px;
 }
 #history{
     font-size: 20px;
@@ -69,22 +80,13 @@ p{
 #currentvalue{
     font-size: 50px;
 }
-#KEYS{
-    height: 100px;
-    width: 112.5px;
-}
-#DisplayRow{
-    border: 1px solid black;
-    height: 130px;
-    width: 100%;
-}
+
 #Display{
     border: 5px solid black;
     margin: 2px;
-    border-radius: 10px;
-    background-color: rgb(54, 57, 56);
-}
-table{
-    border: 8px solid black;
     border-radius: 20px;
+    background-color: hsl(0, 0%, 20%);
+    max-width: 450px;
+    height: 130px;
+    width: 100%;
 }
